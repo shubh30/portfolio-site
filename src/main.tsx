@@ -1,0 +1,19 @@
+import '@fontsource-variable/fraunces/index.css'
+import '@fontsource-variable/fraunces/wght-italic.css'
+import '@fontsource-variable/inter/index.css'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
+import './styles/tokens.css'
+import './styles/base.css'
+import './styles/components.css'
+import './styles/sections.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+)
